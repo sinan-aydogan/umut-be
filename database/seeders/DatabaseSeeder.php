@@ -14,12 +14,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call([
-            TourSeeder::class,
-            CustomerSeeder::class,
-            PriceSeeder::class,
-        ]);
-        // \App\Models\User::factory(10)->create();
+
+        \App\Models\Portfolio::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
